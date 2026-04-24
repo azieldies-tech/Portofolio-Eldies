@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - [EDIT NAMA ANDA]</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">[EDIT NAMA ANDA]</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 contenteditable="true">[EDIT: Nama Lengkap Anda]</h1>
+                <h2 contenteditable="true">[EDIT: Jabatan/Profesi]</h2>
+                <p class="summary" contenteditable="true">
+                    [EDIT: Summary singkat tentang diri Anda. Contoh: Full Stack Developer dengan pengalaman 3+ tahun membangun aplikasi web modern menggunakan React.js, Node.js, dan MongoDB. Passionate dalam menciptakan solusi digital inovatif.]
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary">Hubungi Saya</a>
+                    <a href="#projects" class="btn-secondary">Lihat Proyek</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-pic" contenteditable="true">
+                    📸 Upload foto profil Anda di sini
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p contenteditable="true">
+                        [EDIT: Ceritakan tentang diri Anda, pengalaman, skill utama, dan passion Anda. Buat menarik dan profesional!]
+                    </p>
+                </div>
+                <div class="skills">
+                    <h3>Skills Utama</h3>
+                    <div class="skills-grid" contenteditable="true">
+                        JavaScript • React • Node.js • Python • HTML/CSS • Git • Figma • MongoDB
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Pendidikan & Prestasi</h2>
+            <div class="education-grid" id="education-container">
+                <!-- Items akan di-generate oleh JavaScript -->
+            </div>
+            <button class="add-btn" onclick="addEducation()">➕ Tambah Pendidikan</button>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Pengalaman Kerja</h2>
+            <div class="timeline" id="experience-container">
+                <!-- Items akan di-generate oleh JavaScript -->
+            </div>
+            <button class="add-btn" onclick="addExperience()">➕ Tambah Pengalaman</button>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Proyek Unggulan</h2>
+            <div class="projects-grid" id="projects-container">
+                <!-- Items akan di-generate oleh JavaScript -->
+            </div>
+            <button class="add-btn" onclick="addProject()">➕ Tambah Proyek</button>
+        </div>
+    </section>
+
+    <!-- Organizations -->
+    <section id="organizations" class="organizations">
+        <div class="container">
+            <h2 class="section-title">Organisasi & Kepanitiaan</h2>
+            <div class="org-grid" id="org-container">
+                <!-- Items akan di-generate oleh JavaScript -->
+            </div>
+            <button class="add-btn" onclick="addOrganization()">➕ Tambah Organisasi</button>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Sertifikasi</h2>
+            <div class="cert-grid" id="cert-container">
+                <!-- Items akan di-generate oleh JavaScript -->
+            </div>
+            <button class="add-btn" onclick="addCertification()">➕ Tambah Sertifikasi</button>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Saya</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span contenteditable="true">[EDIT: email@contoh.com]</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span contenteditable="true">[EDIT: 0812-3456-7890]</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span contenteditable="true">[EDIT: Jakarta, Indonesia]</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="#" contenteditable="true">[EDIT: linkedin.com/in/username]</a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Nama Lengkap" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Pesan Anda..." rows="5" required></textarea>
+                    <button type="submit">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Edit Toggle -->
+    <button class="edit-toggle" onclick="toggleEditMode()">
+        <i class="fas fa-edit"></i> Edit Mode
+    </button>
+
+    <!-- Save Button -->
+    <button class="save-btn" onclick="savePortfolio()" style="display:none;">
+        <i class="fas fa-save"></i> Simpan Portfolio
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
